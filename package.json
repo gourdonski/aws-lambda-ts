@@ -1,0 +1,20 @@
+{
+  "name": "aws-lambda-ts",
+  "version": "1.0.0",
+  "description": "TypeScript template for code from Serverless Architectures on AWS book",
+  "author": "lintmouse",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./",
+    "predeploy": "zip -r <filename>.zip * -x *.zip *.json *.log",
+    "deploy": "aws lambda update-function-code --function-name <ARN> --zip-file fileb://<filename>.zip",
+    "test": "run-local-lambda --file index.js --event tests/event.json"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.3.2"
+  },
+  "devDependencies": {
+    "run-local-lambda": "^1.1.1"
+  },
+  "license": "ISC"
+}

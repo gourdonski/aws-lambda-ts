@@ -1,0 +1,1 @@
+Update the sample `event.json` file with data for your Lambda function.  See the <a href="http://docs.aws.amazon.com/lambda/latest/dg/with-s3-example-upload-deployment-pkg.html" target="_blank">AWS documentation</a> for more info.
